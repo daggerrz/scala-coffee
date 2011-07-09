@@ -1,0 +1,14 @@
+```sbt10 console
+[info] Starting scala interpreter...
+[info] 
+Welcome to Scala version 2.9.0.1 (Java HotSpot(TM) 64-Bit Server VM, Java 1.6.0_24).
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> org.scoffeescript.Compiler.compile("alert('Hello, world');")
+res0: Either[org.scoffeescript.CompilationError,String] = 
+Right((function() {
+  alert('Hello, world');
+}).call(this);
+)
+```
